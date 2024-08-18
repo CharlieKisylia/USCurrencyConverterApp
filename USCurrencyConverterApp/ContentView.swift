@@ -27,8 +27,14 @@ struct ContentView: View {
             VStack {
                 HStack {
                     Image(systemName: "globe")
-                        .imageScale(.large)
+                        .font(.system(size: 50))
                         .foregroundColor(.accentColor)
+                    Image(systemName: "dollarsign.circle.fill")
+                        .font(.system(size: 50))
+                        .foregroundColor(.accentColor)
+                }
+                .padding()
+                HStack {
                     Text("US Currency Converter").font(.headline)
                 }
                 
@@ -56,6 +62,7 @@ struct ContentView: View {
             }
         }
         .padding()
+        
     }
 }
 
